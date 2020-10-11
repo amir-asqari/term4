@@ -83,6 +83,14 @@ select_tab = ttk.Frame(root_tabs)
 root_tabs.add(select_tab, text='select')
 root_tabs.pack()
 
+select_tab = ttk.Frame(root_tabs)
+root_tabs.add(select_tab, text='delete')
+root_tabs.pack()
+
+select_tab = ttk.Frame(root_tabs)
+root_tabs.add(select_tab, text='update')
+root_tabs.pack()
+
 Label(create_tab, cnf=style['lbl_name']).grid(row=0, column=0, sticky='w')
 Entry(create_tab, cnf=style['en_name']).grid(row=1, column=0)
 
